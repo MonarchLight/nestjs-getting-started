@@ -6,7 +6,8 @@ import { User } from "./users/user.model";
 import { RolesModule } from "./roles/roles.module";
 import { Role } from "./roles/roles.model";
 import { UserRoles } from "./roles/user-roles.model";
-import { AuthModule } from './auth/auth.module';
+import { AuthModule } from "./auth/auth.module";
+import { HealthModule } from "./health/health.module";
 
 @Module({
   controllers: [],
@@ -28,10 +29,7 @@ import { AuthModule } from './auth/auth.module';
     UsersModule,
     RolesModule,
     AuthModule,
+    HealthModule,
   ],
 })
 export class AppModule {}
-
-// npm install --save @nestjs/sequelize sequelize sequelize-typescript
-// npm install --save-dev @types/sequelize
-// npm install --save pg pg-hstore
